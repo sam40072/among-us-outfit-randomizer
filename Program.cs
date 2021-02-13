@@ -50,26 +50,5 @@ namespace among_us_drip_randomizer
             string finaltext = string.Join(",", file_tolist);
             File.WriteAllText(fullpath + "playerPrefs", finaltext);
         }
-        public static void onlyhat(string idofhat)
-        {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string fullpath = path + @"Low\Innersloth\Among Us\";
-            string readfile = File.ReadAllText(fullpath + "playerPrefs");
-            List<string> file_tolist = readfile.Split(',').ToList();
-            file_tolist[10] = idofhat;
-            string finaltext = string.Join(",", file_tolist);
-            File.WriteAllText(fullpath + "playerPrefs", finaltext);
-        }
-        public static void onlyshirt(string idofskin)
-        {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string fullpath = path + @"Low\Innersloth\Among Us\";
-            string readfile = File.ReadAllText(fullpath + "playerPrefs");
-            List<string> file_tolist = readfile.Split(',').ToList();
-            file_tolist[15] = idofskin;
-            string finaltext = string.Join(",", file_tolist);
-            File.WriteAllText(fullpath + "playerPrefs", finaltext);
-        }
-        
     }
 }
