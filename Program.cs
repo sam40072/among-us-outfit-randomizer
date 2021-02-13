@@ -33,7 +33,7 @@ namespace among_us_drip_randomizer
                 }
                 else
                 {
-                    Console.WriteLine("among found, close to randomize outfit");
+                    Console.WriteLine("among us found, close to randomize outfit");
                 }
             }
             
